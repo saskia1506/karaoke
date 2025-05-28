@@ -21,3 +21,4 @@ Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/list-produk', [ProductController::class, 'index']);
 Route::get('/home', [HomeController::class, 'home']);
 Route::get('/listproduk', [ListProdukController::class, 'show']);
+Route::post('/produk/simpan', [ListProdukController::class, 'simpan'])->name('produk.simpan');
